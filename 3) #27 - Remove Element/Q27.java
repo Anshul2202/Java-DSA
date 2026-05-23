@@ -1,3 +1,5 @@
+// Easy
+
 class Solution {
     public int removeElement(int[] nums, int val) {
         int a = 0;
