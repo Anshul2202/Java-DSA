@@ -1,5 +1,3 @@
-// Easy
-
 class Solution28 {
     public int strStr(String haystack, String needle) {
         int j = 0;
