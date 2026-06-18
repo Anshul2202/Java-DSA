@@ -1,4 +1,4 @@
-class Solution {
+class Solution219 {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
 
         int x = 1;
