@@ -156,5 +156,201 @@ class Pattern{
             System.out.println();
         }
 
+        // ---------------------------------------------
+
+        // Pattern 12
+        for(int i = 1; i <= 4; i++){
+
+            // Num
+            for(int j = 1; j <= i; j++){
+                System.out.print(j);
+            }
+            
+
+            // space
+            for(int j = 1; j <= (2*4 - 2*i); j++){
+                System.out.print(" ");
+            }
+
+            // Num
+            for(int j = i; j >= 1; j--){
+                System.out.print(j);
+            }
+            System.out.println();
+
+
+        }
+
+        // ----------------------------------------------
+
+        // Pattern 13
+        int count = 1;
+        for(int i = 0; i < 5; i++){
+
+            for(int j = 0; j <= i; j++){
+                System.out.print(count + " ");
+                count++;
+            }
+            System.out.println();
+        }
+
+        // -----------------------------------------------
+
+        // Pattern 14
+        for(int i = 0; i < 5; i++){
+
+            for(int j = 0; j <= i; j++){
+                System.out.print((char)('A' + j) + " ");
+            }
+            System.out.println();
+        }
+
+        // -----------------------------------------------
+
+        // Pattern 15
+        int num = 0;
+        for(int i = 0; i < 5; i++){
+
+            num = 0;
+            for(int j = 5; j > i; j--){
+                System.out.print((char)('A' + num) + " ");
+                num++;
+            }
+            System.out.println();
+        }
+
+        // ------------------------------------------------
+
+        // Pattern 16
+        for(int i = 0; i < 5; i++){
+
+            for(int j = 0; j <= i; j++){
+                System.out.print((char)('A' + i));
+            }
+            System.out.println();
+        }
+
+        // -------------------------------------------------
+
+        // Pattern 17
+        int num2 = 0;
+        boolean cdn = true;
+        for(int i = 0; i < 5; i++){
+
+            // space
+            for(int j = 0; j < 5 - i - 1; j++){
+                System.out.print(" ");
+            }
+
+            // char
+            num2 = 0;
+            cdn = true;
+            for(int j = 0; j < (2*i + 1); j++){
+
+                System.out.print((char)('A' + num2));
+
+                if(num2 < (2*i)/2 && cdn) num2++;
+                else {
+                    num2--;
+                    cdn = false;
+                }
+                
+            }
+
+            // space
+            for(int j = 0; j < 5 - i - 1; j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+
+        // -----------------------------------------------------
+
+        // Pattern 18
+        int ch = (int)'E';
+        for(int i = 0; i <= 4; i++){
+
+            ch = (int)'E';
+            for(int j = 0; j <= i; j++){
+                System.out.print((char)(ch - i));
+                ch++;
+            }
+            System.out.println();
+        }
+
+        // --------------------------------------------------
+
+        // Pattern 19
+        for(int i = 0; i < 5; i++){
+
+            // star
+            for(int j = 5 - i; j > 0; j--){
+                System.out.print("*");
+            }
+            
+            // space
+            for(int j = 0; j < 2*i; j++){
+                System.out.print(" ");
+            }
+
+
+            // star
+            for(int j = 5 - i; j > 0; j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for(int i = 0; i < 5; i++){
+
+            // star
+            for(int j = 0; j <= i; j++){
+                System.out.print("*");
+            }
+
+            // space
+            for(int j = 0; j < (5 - 1 - i)*2; j++){
+                System.out.print(" ");
+            }
+
+            // star
+            for(int j = 0; j <= i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // -------------------------------------------------
+
+        // Pattern 20
+        int row = 0;
+        int space = 0;
+        for(int i = 1; i <= 2*5 - 1; i++){
+
+            if(i <= 5) {
+                row = i;
+                space = (5 - i)*2;
+            }
+            else{
+                row = 2*5 - i;
+                space += 2;
+            }
+
+            // star
+            for(int j = 0; j < row; j++){
+                System.out.print("*");
+            }
+
+            // space
+            for(int j = 0; j < space; j++){
+                System.out.print(" ");
+            }
+
+            // star
+            for(int j = 0; j < row; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
